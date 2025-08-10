@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'overpass';
+    src: url(/font/Overpass/Overpass-VariableFont_wght.ttf) format(truetype);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: hsl(217, 12%, 63%);
+    font-family: 'overpass';
+}
+
+.wrapper {
+    width: 25rem;
+    border-radius: 2rem;
+    background-color: hsl(216, 12%, 8%);
+    padding: 2rem;
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom: 3rem;
+}
+
+.star-icon {
+    width: 20px;
+    height: 20px;
+    color: #FC7614;
+}
+
+.title {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 2rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rating__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    cursor: pointer;
+}
+
+.submit {
+    width: 100%;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    font-family: 'overpass';
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: hsl(0, 100%, 100%);
+}
+
+.box-massage {
+    width: 25rem;
+    border-radius: 2rem;
+    background-color: hsl(216, 12%, 8%);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.image {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.score {
+    padding: 0 2rem;
+    border-radius: 1rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    margin-bottom: 2.5rem;
+    height: 2rem;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tank {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.massage__text {
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media(max-width:420px) {
+
+    .wrapper,
+    .box-massage {
+        width: 20rem;
+    }
+
+    body {
+        font-size: 0.9em;
+    }
+
+    .text,
+    .massage__text {
+        font-size: 0.7rem;
+    }
+
+    .star,
+    .rating__number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .submit {
+        font-size: 0.9em;
+    }
+}
